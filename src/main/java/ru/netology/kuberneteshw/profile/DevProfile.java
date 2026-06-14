@@ -1,4 +1,8 @@
 package ru.netology.kuberneteshw.profile;
 
-public class DevProfile {
+public class DevProfile implements SystemProfile {
+    @Override
+    public String getProfile() {
+        return "Current profile is dev";
+    }
 }
